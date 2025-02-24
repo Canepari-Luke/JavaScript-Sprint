@@ -29,3 +29,40 @@ function add(a, b){
    document.querySelector(".math").appendChild(h);
    h.innerHTML = `${t}`;
 }
+
+// this is an array
+let fruits = ["apple", "orange", "banana", "coconut"];
+
+// you can change elaments of an array
+fruits[0] = "green apple";
+
+// you can use the method of changing elements to add elements to an array
+fruits[3] = "guava";
+
+//you can also use other methods to edit arrays
+fruits.push("grape");//push adds an element to the end of an array
+
+fruits.pop();//pop removes the last element of an array
+
+fruits.unshift("kiwi");//unshift adds an element to the beginning of an array
+
+fruits.shift();//shift removes the first element of an array
+
+// you can list out and add elements to an array
+
+console.log(fruits); 
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+console.log(fruits[3]);
+
+// you can also get the length of an array
+let numOfFruits = fruits.length;
+
+// this will print the number of fruits in the array
+console.log(numOfFruits);
+
+// you can use this method to search for an element in an array
+let index = fruits.indexOf("banana");
+
+console.log(index);
